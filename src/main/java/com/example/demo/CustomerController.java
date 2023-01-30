@@ -28,6 +28,8 @@ public class CustomerController {
 		return new ResponseEntity<>(customerRepo.findAll(), HttpStatus.OK);
 	}
 	
+	//Implement PutMapping here
+	
 	@PostMapping("/postCustomer")
 	public ResponseEntity<Object> postCustomer(@RequestBody Customer customer){
 		customerRepo.save(customer);
